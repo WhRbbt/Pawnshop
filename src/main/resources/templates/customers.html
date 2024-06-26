@@ -8,6 +8,7 @@
 <div th:replace="~{header :: navbar}"></div>
 <div class="container">
     <h1>Customers</h1>
+    <div th:if="${message}" class="alert alert-success" role="alert" th:text="${message}"></div>
     <a href="/customers/add" class="btn btn-primary mb-3">Add</a>
     <table class="table">
         <thead>
