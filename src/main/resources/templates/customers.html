@@ -29,6 +29,10 @@
             <td th:text="${customer.passportNumber}"></td>
             <td th:text="${customer.passportSeries}"></td>
             <td th:text="${customer.passportIssueDate}"></td>
+            <td>
+                <a th:href="@{'/customers/edit/' + ${customer.id}}" class="btn btn-primary">Edit</a>
+                <a th:href="@{'/customers/delete/' + ${customer.id}}" class="btn btn-danger">Delete</a>
+            </td>
         </tr>
         </tbody>
     </table>
